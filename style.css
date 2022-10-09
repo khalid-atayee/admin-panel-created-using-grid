@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    /* grid-template-rows: minmax(100px,auto); */
+    width: 100%;
+    grid-template-areas: 'header header header header header header'
+                        'aside main main main main main '
+                        'footer footer footer footer footer footer';
+}
+
+header{
+    color: white;
+    grid-area: header;
+    padding: .7em 2em;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #6c757d;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* .logo{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+} */
+
+.profile{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+.icons li {
+    text-decoration: none;
+    list-style: none;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #495057;
+    min-height: 83vh;
+}
+.menu{
+    margin-top: 1em;
+    display: grid;
+    justify-content: space-around;
+    border: 1px solid rebeccapurple;
+
+    
+}
+.menu li{
+    list-style: none;
+    padding-top: 1em;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.company-name{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: .7em;
+    
+}
+.icon{
+    margin-right: 1em;
+}
+main{
+    grid-area: main;
+
+    background-color: #CAD2C5;
+
+}
+
+.content{
+    display: grid;
+    background-color: white;
+    margin: 1.2em;
+    padding: 1.5em;
+    box-shadow:  0px 0px 5px 0px #b6bdb2;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+footer{
+    grid-area: footer;
+    padding: 2em;
+    background-color: #6c757d;
+    color: rgba(255, 255, 255,.8);
+    justify-content: space-between;
+}
